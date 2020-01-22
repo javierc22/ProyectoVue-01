@@ -1,9 +1,9 @@
 <template>
   <div>
     <ul class="list-group">
-      <li v-for="item in frutas" :key="item.id" 
+      <li v-for="(item, index) in frutas" :key="item.index" @click="aumentar(index)" 
       class="list-group-item d-flex justify-content-between align-items-center">
-        {{ item.nombre }}
+        {{ index}} - {{ item.nombre }}
         <span class="badge badge-primary badge-pill">{{ item.cantidad }}</span>
       </li>
     </ul>
@@ -11,12 +11,15 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState, mapMutations } from 'vuex';
 
 export default {
   name: "Lista",
   computed: {
     ...mapState(['frutas'])
+  },
+  methods: {
+    ...mapMutations(['aumentar'])
   }
 
 };
