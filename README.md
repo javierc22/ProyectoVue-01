@@ -1,5 +1,7 @@
 # proyecto-01
 
+<img src="img-app.png" alt="Smiley face" height="400">
+
 ## Project setup
 ```
 npm install
