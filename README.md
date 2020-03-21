@@ -2,20 +2,10 @@
 
 <img src="img-app.png" alt="Smiley face" height="400">
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Vue CLI 3 y VUEX | Contador de Frutas
+- Crear primeros componentes
+- mapState con Vuex
+- mapMutation con Vuex
+- Ordenar Array - Finalizando proyecto
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
